@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 20, 2021 at 07:37 AM
+-- Generation Time: Jan 20, 2021 at 02:32 PM
 -- Server version: 5.7.26
 -- PHP Version: 5.6.40
 
@@ -11,7 +11,7 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Database: `Mock_test_db`
+-- Database: `login_db`
 --
 
 -- --------------------------------------------------------
@@ -22,17 +22,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `mock_test_tbl` (
   `Id` int(11) NOT NULL,
-  `Name` varchar(50) NOT NULL,
-  `Email` varchar(20) NOT NULL,
-  `Phone` varchar(11) NOT NULL,
-  `Gender` varchar(20) NOT NULL
+  `name` varchar(50) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `phone` varchar(11) NOT NULL,
+  `gender` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `mock_test_tbl`
 --
 
-INSERT INTO `mock_test_tbl` (`Id`, `Name`, `Email`, `Phone`, `Gender`) VALUES
+INSERT INTO `mock_test_tbl` (`Id`, `name`, `email`, `phone`, `gender`) VALUES
 (1, 'Test1', 'test1@gmail.com', '123456789', 'male'),
 (2, 'Test2', 'test2@gmail.com', '212343234', 'female');
 
